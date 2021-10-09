@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Pie charts</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.1/dist/echarts.min.js"></script>
+    <script type="module" src="charts/d3-chart.js" defer></script>
+    <script type="module" src="charts/chartjs-chart.js" defer></script>
+    <script type="module" src="charts/echart-chart.js" defer></script>
+</head>
+<body>
+<header>
+    <span>Pie charts comparison</span>
+</header>
+<section>
+    <div class="chart-widget">
+        <div class="widget-header">
+            <span>D3 pie chart</span>
+        </div>
+        <div id="d3-chart" class="chart" style="padding: 90px"></div>
+    </div>
+    <div class="chart-widget">
+        <div class="widget-header">
+            <span>Chart.js pie chart</span>
+        </div>
+        <div class="chart" style="padding: 90px">
+            <canvas id="chartjs-chart" width="450" height="450"></canvas>
+        </div>
+    </div>
+    <div class="chart-widget">
+        <div class="widget-header">
+            <span>Echart pie chart</span>
+        </div>
+        <div class="chart">
+            <div id="echart-chart"></div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
